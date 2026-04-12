@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WA Group Sender Pay Success</title>
+</head>
+<body>
+<div class="container">
+    <p style='margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 40px;
+            color: #000000;
+            font-weight: bold;
+            font-size: 14pt;
+            font-family: Verdana, Verdana, Verdana, Verdana;
+            display: flex;
+            align-items: center;
+        '>
+        <img src="https://scrm-global.zingfront.com/sender/wapi_sender/wapi%20sender.jpeg" alt="images" width="60px" height="60px" style="background-color: transparent; border-radius: 30px;">
+        &nbsp;&nbsp;<span style="color: #404040;">WA Group Sender Active Code(WAPlus LLC)</span>
+    </p>
+    <br/>
+    <p style='margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 25px;
+            color: #000000;
+            font-size: 12pt;
+            font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica Neue", "Helvetica Neue";'>
+        <span>Hey!</span>
+    </p>
+    <p style='margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 25px;
+            color: #000000;
+            font-size: 12pt;
+            font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica Neue", "Helvetica Neue";'>
+        <span>Thanks for subscribe WA Group Sender Extension!</span>
+    </p>
+    <br>
+    <div class="licenseKeyDiv">
+        <div><h2>&nbsp;&nbsp;License keys:</h2></div>
+    </div>
+    <p style='margin-top: 20px;
+            margin-bottom: 0px;
+            line-height: 25px;
+            color: #000000;
+            font-size: 12pt;
+            font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica Neue", "Helvetica Neue";'>
+        <span>An email has been sent to your email address containing all license keys.</span><br>
+        <span>If you do not receive the email within a few minutes, please check your spam folder.</span>
+    </p>
+    <p style='margin-top: 20px;
+            margin-bottom: 0px;
+            line-height: 25px;
+            color: #000000;
+            font-size: 12pt;
+            font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica Neue", "Helvetica Neue";'>
+        <span style="font-weight: bold">How to Activate Code:&nbsp;&nbsp;</span><span><a href="https://scrm-global.zingfront.com/sender/wapi_sender/how_to_activate_code.html">help link</a></span></span>
+    </p>
+    <br><br><br>
+    <p style='margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 25px;
+            color: #000000;
+            font-size: 12pt;
+            font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica Neue", "Helvetica Neue";'>
+        <span style="font-weight: bold">For Support: </span>
+    </p>
+    <p style='margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 25px;
+            color: #000000;
+            font-size: 12pt;
+            font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica Neue", "Helvetica Neue";'>
+        <span>1.send me an email:&nbsp;&nbsp;<a href="mailto:shuttershanti708@gmail.com">shuttershanti708@gmail.com</a></span><br>
+        <span>2.visit our extension:&nbsp;&nbsp;<a href="https://chrome.google.com/webstore/detail/wapi-send-personalized-me/nmbjblpeeiobnakglbickhpgbinojbch?utm_source=active_code_email">extension link</a></span><br>
+        <span>3.contact us:&nbsp;&nbsp;<a href="https://wa.me/send?phone=8617611594206">whatsapp chat link</a></span><br>
+    </p>
+    <br><br><br>
+    <p style='margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 25px;
+            color: #000000;
+            font-size: 12pt;
+            font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica Neue", "Helvetica Neue";'>
+        <span>Sincerely,</span>
+    </p>
+    <p style='margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 25px;
+            color: #000000;
+            font-size: 12pt;
+            font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica Neue", "Helvetica Neue";'>
+                <span>Your Friend: Larry, the CEO of <span style="color: #3371bb !important;
+                    font-weight: bold;">WA Group Sender</span></span>
+    </p>
+</div>
+</body>
+<script>
+    function copyContent(copySvg) {
+        console.log(copySvg)
+        let pElement = copySvg.previousElementSibling
+        let content = pElement.innerText
+        // console.log(content)
+        // text是复制文本
+        // 创建input元素
+        const el = document.createElement('input')
+        // 给input元素赋值需要复制的文本
+        el.setAttribute('value', content)
+        // 将input元素插入页面
+        document.body.appendChild(el)
+        // 选中input元素的文本
+        el.select()
+        // 复制内容到剪贴板
+        document.execCommand('copy')
+        // 删除input元素
+        document.body.removeChild(el)
+    }
+    window.onload = function () {
+        let utm_campaign = getUrlParams(window.location.href)['utm_campaign']
+        getActiveCode(utm_campaign)
+    }
+    function getUrlParams(url) {
+        // 通过 ? 分割获取后面的参数字符串
+        let urlStr = url.split('?')[1]
+        // 创建空对象存储参数
+        let obj = {};
+        // 再通过 & 将每一个参数单独分割出来
+        let paramsArr = urlStr.split('&')
+        for(let i = 0,len = paramsArr.length;i < len;i++){
+            // 再通过 = 将每一个参数分割为 key:value 的形式
+            let arr = paramsArr[i].split('=')
+            obj[arr[0]] = arr[1];
+        }
+        return obj
+    }
+    function getActiveCode(utm_campaign) {
+        let requestObj = {"transaction_id": utm_campaign}
+        let httpRequest = new XMLHttpRequest()//第一步：创建需要的对象
+        // httpRequest.open('POST', 'http://127.0.0.1:8000/api/wapi/permission/active-code-list/', true) //第二步：打开连接
+        httpRequest.open('POST', 'https://wawebsender.com/api/wapi/permission/active-code-list/', true) //第二步：dev
+        httpRequest.setRequestHeader("Content-type","application/json")//设置请求头 注：post方式必须设置请求头（在建立连接后设置请求头）
+        httpRequest.send(JSON.stringify(requestObj));//发送请求 将情头体写在send中
+        /**
+         * 获取数据后的处理程序
+         */
+        httpRequest.onreadystatechange = function () {//请求后的回调接口，可将请求成功后要执行的程序写在其中
+            if (httpRequest.readyState == 4 && httpRequest.status == 200) {//验证请求是否发送成功
+                let responseText = httpRequest.responseText;//获取到服务端返回的数据
+                let response_json = JSON.parse(responseText)
+                for(let activeCode of response_json['data']) {
+                    renderHTML(activeCode['active_code'])
+                }
+
+            }
+        };
+    }
+    function insertStr(activeCode,start, newStr){
+        return activeCode.slice(0, start) + newStr + activeCode.slice(start)
+    }
+    function renderHTML(activeCode) {
+        activeCode = insertStr(activeCode, 4, " ")
+        let licenseKeyDiv = document.getElementsByClassName("licenseKeyDiv")[0]
+        let licenseKeyContainer = document.createElement("div")
+        licenseKeyContainer.setAttribute("class","licenseKeyContainer")
+        licenseKeyContainer.innerHTML = ' <div class="licenseKeyList">\n' +
+            '                <p>'+activeCode+'</p>\n' +
+            '                <svg onclick="copyContent(this)" t="1671441578919" class="icon" viewBox="0 0 1024 1024" version="1.1"\n' +
+            '                     xmlns="http://www.w3.org/2000/svg" p-id="2901" width="200" height="200">\n' +
+            '                    <path d="M780.8 320l-19.2 0L492.8 320C467.2 320 448 339.2 448 371.2l0 480C448 876.8 467.2 896 492.8 896l358.4 0c25.6 0 44.8-19.2 44.8-51.2l0-384L896 441.6 780.8 320zM870.4 838.4c0 19.2-12.8 38.4-32 38.4L505.6 876.8c-19.2 0-32-19.2-32-38.4L473.6 377.6c0-19.2 12.8-38.4 32-38.4l256 0 0 70.4c0 25.6 19.2 51.2 44.8 51.2l70.4 0L876.8 838.4zM819.2 441.6c-19.2 0-32-19.2-32-38.4L787.2 345.6l89.6 96L819.2 441.6z"\n' +
+            '                          p-id="2902" fill="#e6e6e6"></path>\n' +
+            '                    <path d="M793.6 512 544 512C537.6 512 537.6 518.4 537.6 524.8l0 0c0 6.4 6.4 12.8 12.8 12.8l243.2 0c6.4 0 12.8-6.4 12.8-12.8l0 0C800 518.4 800 512 793.6 512z"\n' +
+            '                          p-id="2903" fill="#e6e6e6"></path>\n' +
+            '                    <path d="M793.6 620.8 544 620.8c-6.4 0-12.8 6.4-12.8 12.8l0 0c0 6.4 6.4 12.8 12.8 12.8l243.2 0c6.4 0 12.8-6.4 12.8-12.8l0 0C800 627.2 800 620.8 793.6 620.8z"\n' +
+            '                          p-id="2904" fill="#e6e6e6"></path>\n' +
+            '                    <path d="M659.2 729.6 544 729.6c-6.4 0-12.8 6.4-12.8 12.8l0 0c0 6.4 6.4 12.8 12.8 12.8l108.8 0c6.4 0 12.8-6.4 12.8-12.8l0 0C672 729.6 665.6 729.6 659.2 729.6z"\n' +
+            '                          p-id="2905" fill="#e6e6e6"></path>\n' +
+            '                    <path d="M230.4 537.6c-6.4 0-12.8 6.4-12.8 12.8l0 0c0 6.4 6.4 12.8 12.8 12.8l108.8 0c6.4 0 12.8-6.4 12.8-12.8l0 0c0-6.4-6.4-12.8-12.8-12.8L230.4 537.6z"\n' +
+            '                          p-id="2906" fill="#e6e6e6"></path>\n' +
+            '                    <path d="M217.6 441.6 217.6 441.6c0 6.4 6.4 12.8 12.8 12.8l192 0L422.4 428.8l-192 0C224 428.8 217.6 435.2 217.6 441.6z"\n' +
+            '                          p-id="2907" fill="#e6e6e6"></path>\n' +
+            '                    <path d="M217.6 332.8 217.6 332.8c0 6.4 6.4 12.8 12.8 12.8l192 0c0-6.4 6.4-19.2 12.8-25.6L230.4 320C224 320 217.6 326.4 217.6 332.8z"\n' +
+            '                          p-id="2908" fill="#e6e6e6"></path>\n' +
+            '                    <path d="M486.4 275.2l70.4 0 0 32L576 307.2 576 275.2 576 249.6 467.2 128 441.6 128 172.8 128C147.2 128 128 153.6 128 179.2l0 480C128 684.8 147.2 704 172.8 704l249.6 0 0-25.6L185.6 678.4c-19.2 0-32-19.2-32-38.4L153.6 192c0-19.2 12.8-38.4 32-38.4l256 0 0 70.4C441.6 249.6 460.8 275.2 486.4 275.2zM467.2 153.6l89.6 96L499.2 249.6c-19.2 0-32-19.2-32-38.4L467.2 153.6z"\n' +
+            '                          p-id="2909" fill="#e6e6e6"></path>\n' +
+            '                </svg>\n' +
+            '            </div>'
+        licenseKeyDiv.appendChild(licenseKeyContainer)
+    }
+</script>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    p {
+        line-height: 20px;
+    }
+
+    .container {
+        width: 800px;
+        background-color: #f9eff3;
+        padding: 50px;
+        border-radius: 10px;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .licenseKeyDiv {
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #0F0101;
+        color: #67c23a;
+    }
+
+    .licenseKeyContainer {
+        background-color: #0F0101;
+        color: #67c23a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .licenseKeyList {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .licenseKeyList p {
+        line-height: 0px;
+        font-size: 20px;
+    }
+
+    .licenseKeyList svg {
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+    }
+    .footer {
+        color: #ec6433;
+        margin-top: 50px;
+        text-align: center;
+    }
+</style>
+</html>

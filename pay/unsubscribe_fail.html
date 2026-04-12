@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>unsubscribe fail</title>
+  </head>
+  <body>
+    <div style="text-align: center; margin: 40px 0">
+      <img src="https://scrm-global.zingfront.com/sender/wapi_sender/unsubscribe_fail.png" />
+    </div>
+    <div
+      style="
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: SourceHanSansSC-regular;
+        font-size: 20px;
+      "
+    >
+      We're sorry, but we were unable to cancel your subscription at this time.
+    </div>
+    <div style="text-align: center; font-family: SourceHanSansSC-regular; font-size: 14px">
+      Please try again later or contact our customer support team for further assistance.
+    </div>
+    <div
+      style="
+        text-align: center;
+        font-family: SourceHanSansSC-regular;
+        font-size: 14px;
+        margin: 40px 0;
+      "
+    >
+      <a href="https://chat.whatsapp.com/IayvFY393BL4LcLqy8JzDD" class="wa--replay"
+        >Contact Customer Support</a
+      >
+    </div>
+  </body>
+  <script>
+    const params = new URLSearchParams(window.location.search)
+    const email = params.get('email')
+    document.getElementsByClassName('wa--replay')[0].href =
+      'https://api.whatsapp.com/send?phone=8617611594206&text=type%3A%20unsubscription%20error%0Aemail%3A%20' +
+      email +
+      '%0AHelp%20me%20unsubscribe%2C%20thanks!'
+  </script>
+</html>
