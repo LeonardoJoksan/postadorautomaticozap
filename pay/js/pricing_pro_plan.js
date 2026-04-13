@@ -2,14 +2,19 @@ $(function () {
   initData()
 })
 //获取参数方法
-function getHref() {
-  var url = decodeURI(location.search)
+function getHref(search) {
+  var url = typeof search !== 'undefined' ? search : decodeURI(location.search)
   var theRequest = new Object()
   if (url.indexOf('?') != -1) {
     var str = url.substr(1)
-    strs = str.split('&')
-    for (var i = 0; i < strs.length; i++) {
-      theRequest[strs[i].split('=')[0]] = unescape(strs[i].split('=')[1])
+    if (str) {
+      var strs = str.split('&')
+      for (var i = 0; i < strs.length; i++) {
+        var pair = strs[i].split('=')
+        if (pair[0]) {
+          theRequest[pair[0]] = decodeURIComponent(pair[1] || '')
+        }
+      }
     }
   }
   return theRequest
